@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="center-container">
@@ -15,11 +16,31 @@
                 <h1>brock janssen</h1>
             </div>
             <div class="banner rt-menu">
-                <!-- I learned how to insert a hamburger from google fonts - just have to type menu-->
-                <span class="material-symbols-outlined">menu</span>
+                <div>
+                    <a href="javascript:void(0);" onclick="menuOpen()" class="menu-button no-after">
+                    <!-- I learned how to insert a hamburger from google fonts - just have to type menu-->
+                    ☰
+                    </a>
+                </div>
             </div>
         </div>
-
+        <div id="nav-menu" class="banner">
+            <a href="portfolio.html" class="no-after">
+                <div class="nav-item">
+                    portfolio
+                </div>
+            </a>
+            <a href="portfolio.html" class="no-after">
+                <div class="nav-item">
+                    writing
+                </div>
+            </a>
+            <a href="portfolio.html" class="no-after">
+                <div class="nav-item">
+                    pizza
+                </div>
+            </a>
+        </div>
         <div class="banner roles-banner">
             <div class="banner-item">communicator</div>
             <div class="banner-slash">/</div>
@@ -50,9 +71,9 @@
                 &nbsp;
             </div>
             <p>
-                <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Maecenas arcu felis, faucibus in mauris non, ornare consectetur ligula. Donec libero lectus, euismod in euismod sit amet, placerat id arcu. <b>Vivamus ultricies ex sit amet ipsum pretium</b>, eu ullamcorper justo maximus. Sed porta velit vel ex pulvinar viverra. Fusce tincidunt at est sit amet luctus. Vestibulum et elit tincidunt turpis scelerisque dapibus. Curabitur commodo ante quis leo auctor euismod sit amet id felis. </p>
+                <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Maecenas arcu felis, faucibus in mauris non, ornare consectetur ligula. Donec libero lectus, euismod in euismod sit amet, placerat id arcu. <b>Vivamus ultricies ex sit amet ipsum pretium</b>, eu ullamcorper justo maximus.  Fusce tincidunt at est sit amet luctus. Curabitur commodo ante quis leo auctor euismod sit amet id felis. </p>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, justo vitae molestie condimentum, orci arcu cursus neque, ac commodo urna dolor sit amet mi. Phasellus nec felis lobortis, <b>porta justo vitae, laoreet leo</b>.  Mauris feugiat, orci a volutpat mollis, turpis nisl tincidunt enim, ac rhoncus enim augue a urna. Cras sed magna risus. Nam tempor tincidunt augue at pulvinar. Cras volutpat nisl quis imperdiet viverra.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec felis lobortis, <b>porta justo vitae, laoreet leo</b>. Mauris feugiat, orci a volutpat mollis, turpis nisl tincidunt enim, ac rhoncus enim augue a urna. Cras sed magna risus. Nam tempor tincidunt augue at pulvinar. Cras volutpat nisl quis imperdiet viverra.
             </p>
         </div>
         <div class="split-banner">
@@ -68,7 +89,7 @@
                 <h4>profile page</h4>
                 <div class="split-container">
                     <div class="split-text">
-                        I am currently hard at work building and refining the professional profile page you are reading now. <br><br>
+                        I am currently hard at work building and refining the professional <b>profile page</b> page you are reading now. <br><br>
 
                         <a href="pizza.html">project details</a>
                     </div>
@@ -81,7 +102,7 @@
             <div class="content50 banner banner50">
                 <h4>my pizza place</h4>
                 <div class="split-container">
-                    <div class="split-text">I appreciate you taking the time to visit my profile page. Why don't you treat yourself to some pizza from my pizza place?<br><br>
+                    <div class="split-text">I appreciate you taking the time to visit my profile page. Why don't you <b>treat yourself</b> to some pizza from my pizza place?<br><br>
                     <a href="pizza.html">order now</a>
                     </div>
                     <a class="no-after" href="project">
@@ -101,19 +122,57 @@
             <h3>project alpha</h3>
         </div>
         <div class="content banner">
-            <p>Voluptate velit anim quis magna magna officia aute aute incididunt adipisicing culpa mollit et esse. Ad tempor aliqua nulla occaecat. Laboris sunt occaecat et nostrud magna qui irure adipisicing ex mollit. Culpa labore velit aute labore cupidatat ut amet cillum laboris commodo excepteur. Pariatur est enim commodo anim nulla laborum exercitation aliquip. Enim nisi labore voluptate dolor sunt laboris excepteur.</p>
+            <div class="split-container">
+                <div>
+                    <a href="http://about.ups.com" class="no-after">
+                        <img class="page-pic portfolio-pic" src="page-pic-02.jpg">
+                    </a>
+                </div>
+                <div>
+                    <p>Voluptate velit anim quis magna magna officia aute aute incididunt adipisicing culpa mollit et esse. Ad tempor aliqua nulla occaecat. Laboris sunt occaecat et nostrud magna qui irure adipisicing ex mollit. Culpa labore velit aute labore cupidatat ut amet cillum laboris commodo excepteur. Pariatur est enim commodo anim nulla laborum exercitation aliquip. Enim nisi labore voluptate dolor sunt laboris excepteur.</p>
+                    <div class="portfolio-link-container">
+                        <a href="http://about.ups.com" class="portfolio-link">visit site</a>
+                    </div>
+                </div>
+            </div>
+           
+            
         </div>
         <div class="banner subsection">
             <h3>project bravo</h3>
         </div>
         <div class="content banner">
-            <p>Eiusmod anim ut laborum veniam veniam duis cupidatat minim labore ut. Aliquip incididunt labore commodo aute eiusmod exercitation ut consectetur exercitation. Ea id enim quis sunt incididunt. Excepteur consectetur est irure id exercitation eiusmod aliqua quis sit dolore. Ex veniam non velit voluptate Lorem irure incididunt. Occaecat consequat aute duis culpa reprehenderit consectetur excepteur et. Aliqua nulla in cupidatat laboris.</p>
+            <div class="split-container">
+                <div>
+                    <a href="http://about.ups.com" class="no-after">
+                        <img class="page-pic portfolio-pic" src="page-pic-03.jpg">
+                    </a>
+                </div>
+                <div>
+                    <p>Voluptate velit anim quis magna magna officia aute aute incididunt adipisicing culpa mollit et esse. Ad tempor aliqua nulla occaecat. Laboris sunt occaecat et nostrud magna qui irure adipisicing ex mollit. Culpa labore velit aute labore cupidatat ut amet cillum laboris commodo excepteur. Pariatur est enim commodo anim nulla laborum exercitation aliquip. Enim nisi labore voluptate dolor sunt laboris excepteur.</p>
+                    <div class="portfolio-link-container">
+                        <a href="http://about.ups.com" class="portfolio-link">visit site</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="banner subsection">
             <h3>project charlie</h3>
         </div>
         <div class="content banner">
-            <p>Exercitation labore irure elit quis. Ad aliqua tempor eu eu eiusmod sint sunt qui. Fugiat excepteur elit excepteur proident nulla. Sint ea cupidatat excepteur culpa minim eiusmod amet ea proident enim non.</p>
+            <div class="split-container">
+                <div>
+                    <a href="http://about.ups.com" class="no-after">
+                        <img class="page-pic portfolio-pic" src="page-pic-04.jpg">
+                    </a>
+                </div>
+                <div>
+                    <p>Voluptate velit anim quis magna magna officia aute aute incididunt adipisicing culpa mollit et esse. Ad tempor aliqua nulla occaecat. Laboris sunt occaecat et nostrud magna qui irure adipisicing ex mollit. Culpa labore velit aute labore cupidatat ut amet cillum laboris commodo excepteur. Pariatur est enim commodo anim nulla laborum exercitation aliquip. Enim nisi labore voluptate dolor sunt laboris excepteur.</p>
+                    <div class="portfolio-link-container">
+                        <a href="http://about.ups.com" class="portfolio-link">visit site</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <br>

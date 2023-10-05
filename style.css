@@ -11,16 +11,14 @@ a {
 }
 
 a:hover {
-    color:rgb(0, 195, 195);
+    color: cyan;
 }
 
 a::after {
     content: ' >>';
 }
 
-.no-after::after {
-    content: '';
-}
+/* is there a way to create pseudo elements like below in a list, rather than individual declarations? */
 
 h1::after {
     content: ' //';
@@ -34,6 +32,14 @@ h3::after {
     content: ' //';
 }
 
+.no-after::after {
+    content: '';
+}
+
+/* b {
+    color: rgba(255, 255, 255, 0.5);
+} */
+
 p {
     font-size:larger;
     margin-block-start: .5em;
@@ -42,15 +48,39 @@ p {
     margin-left: 8px;
 }
 
+
+
+#nav-menu {
+    display: none;
+    height: 70px;
+    margin: 13px 16px 5px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 177, 177);
+}
+
+.nav-item{
+    color: rgb(0, 75, 75);
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 8px;
+    margin: 18px;
+}
+
+.nav-item:hover{
+    color: cyan;
+}
+
 .banner {
     background-color: darkcyan;
     color: rgb(0, 75, 75);
     border-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
 }
 
 .banner50 {
     width: 50%;
-    margin: 15px 0px 3px 16px;
+    margin: 13px 0px 3px 16px;
 }
 
 .banner50 h3 {
@@ -81,15 +111,16 @@ p {
 .rt-menu {
     width: 90px;
     text-align: center;
-    font-size: 3em;
-    display: flex;
-    flex-direction: column;
     margin: 8px 16px 5px 5px;
+}
+.menu-button {
+    font-size: 2.7em;
+    padding: 0px;
 }
 
 .roles-banner {
     font-size: large;
-    margin: 8px 16px 5px 16px;
+    margin: 13px 16px 5px 16px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -114,13 +145,8 @@ p {
     margin: auto 0px auto 0px;
 }
 
-.current-project {
-    border: solid blue 1px;
-    margin: 8px;
-}
-
 .section {
-    margin: 15px 16px 2px 16px;
+    margin: 18px 16px 2px 16px;
 }
 
 .section h2 {
@@ -129,8 +155,9 @@ p {
 }
 
 .subsection {
-    margin: 15px 16px 2px 16px;
+    margin: 12px 16px 2px 16px;
 }
+
 .subsection h3 {
     font-size: 2rem;
     margin: 0px 0px 2px 16px;
@@ -142,7 +169,7 @@ p {
 }
 
 .content50 {
-    margin: 2px 0px 2px 16px;
+    margin: 2px 0px 0px 16px;
     padding: 8px;
 }
 
@@ -155,7 +182,7 @@ p {
     width:120px;
     height: 120px;
     border-radius: 10px;
-    border: solid white 1px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
     margin: 16px 8px 12px 12px;
     float: right;
     background-image: url("bj.jpg");
@@ -167,17 +194,32 @@ p {
 }
 
 .page-pic {
-    float: right;
     display: none;
-    border: solid white 1px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
     border-radius: 10px;
 }
 
-@media screen and (min-width: 780px) {
+.portfolio-pic {
+    margin: 10px 16px 0px 8px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+    opacity: 75%;
+}
+
+.portfolio-link-container{
+    width: 100%;
+    text-align: end;
+}
+
+.portfolio-link {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 700px) {
     .page-pic {
         display: block;
-    }
-    
+    }    
 }
 
 .split-banner{
@@ -187,8 +229,6 @@ p {
 
 .split-container {
     display:flex; 
-    border-top: solid rgb(0 75 75) 1px; 
-    padding-top: 8px;
 }
 .split-text {
     font-size:larger;
@@ -215,7 +255,7 @@ p {
 
 .material-symbols-outlined {
     font-size: 1em;
-    margin: auto 0px auto 0px;
+    margin-bottom: -10px;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -224,7 +264,7 @@ p {
   }
 
 .material-symbols-outlined:hover {
-    color:rgb(0, 175, 175);
+    color:cyan;
     cursor: pointer;
     font-size: 1em;
 }
