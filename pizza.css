@@ -180,13 +180,22 @@ p:after {
 .b-and-w h3 {
     color: black;
     font-size: 1.5em;
-    margin-left:24px;
+    margin: 8px 0px 8px 8px;
 }
 
 .b-and-w p {
     margin-left:24px;
 }
 
+.b-and-w img{
+    float:right;
+    width: 80px;
+    margin: 0px 16px 0px 16px;
+}
+
+.pizza-item {
+    min-height:120px;
+}
 .footer {
     color: #dc6b29;
     text-align: center;
