@@ -1,17 +1,18 @@
 body {
     margin: 0px;
     box-sizing: border-box;
-    background-color: rgb(0, 75, 75);
+    background-color: white;
+    background-image: url("/images/pattern-1.jpg");
     font-family: "Urbanist", sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: rgb(0, 75, 75);
+    color: #b61500;
 }
 
 a:hover {
-    color: cyan;
+    color: #dc6b29;
 }
 
 a::after {
@@ -19,18 +20,6 @@ a::after {
 }
 
 /* is there a way to create pseudo elements like below in a list, rather than individual declarations? */
-
-h1::after {
-    content: ' //';
-}
-
-h2::after {
-    content: ' //';
-}
-
-h3::after {
-    content: ' //';
-}
 
 .no-after::after {
     content: '';
@@ -44,17 +33,25 @@ p {
     margin-left: 8px;
 }
 
+p:before {
+    content: '/* '
+}
+
+p:after {
+    content: ' */'
+}
+
 #nav-menu {
-    display: none;
+    display: flex;
     height: 70px;
     margin: 13px 16px 5px 16px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(2, 177, 177);
+    background-color: #ffeed4;
 }
 
 .nav-item{
-    color: rgb(0, 75, 75);
+    color: #b61500;
     font-size: 1.8em;
     font-weight: bold;
     padding: 8px;
@@ -62,14 +59,14 @@ p {
 }
 
 .nav-item:hover{
-    color: cyan;
+    color: #dc6b29;
 }
 
 .banner {
-    background-color: darkcyan;
-    color: rgb(0, 75, 75);
+    background-color: #ffeed4;
+    color: #b61500;
     border-radius: 10px;
-    border: solid rgba(255, 255, 255, 0.5) 1px;
+    border: solid #b61500 2px;
 }
 
 .banner50 {
@@ -93,52 +90,13 @@ p {
 }
 
 .name-banner {
-    margin: 8px 5px 5px 16px;
     width: 100%;
+    margin: 8px 16px 5px 16px;
 }
 
 .name-banner h1 {
     font-size: 3em;
     margin: 2px 0px 2px 16px;
-}
-
-.rt-menu {
-    width: 90px;
-    text-align: center;
-    margin: 8px 16px 5px 5px;
-}
-
-.menu-button {
-    font-size: 2.7em;
-    padding: 0px;
-}
-
-.roles-banner {
-    font-size: large;
-    margin: 13px 16px 5px 16px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.banner-item {
-    margin: auto 16px auto 16px;    
-}
-
-.banner-slash {
-    margin: auto 0px auto 0px;    
-}
-
-.contact-info {
-    font-size: large;
-    margin: 5px 16px 8px 16px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-link {
-    margin: auto 0px auto 0px;
 }
 
 .section {
@@ -174,33 +132,6 @@ p {
     font-size: 1.5em;
 }
 
-.profile-pic{
-    width:120px;
-    height: 120px;
-    border-radius: 10px;
-    border: solid rgba(255, 255, 255, 0.5) 1px;
-    margin: 16px 8px 12px 12px;
-    float: right;
-    background-image: url("/images/bj.jpg");
-    background-size:contain
-}
-
-.profile-pic:hover{
-    background-image: url("/images/bj-hover.jpg");
-    background-size:contain
-}
-
-.page-pic {
-    display: none;
-    border: solid rgba(255, 255, 255, 0.5) 1px;
-    border-radius: 10px;
-}
-
-.portfolio-pic {
-    margin: 10px 16px 0px 8px;
-    border: solid rgba(255, 255, 255, 0.5) 1px;
-    opacity: 75%;
-}
 
 .portfolio-link-container{
     width: 100%;
@@ -211,12 +142,6 @@ p {
     font-size: 2em;
     font-weight: bold;
     margin-right: 16px;
-}
-
-@media screen and (min-width: 700px) {
-    .page-pic {
-        display: block;
-    }    
 }
 
 .split-banner{
@@ -239,8 +164,31 @@ p {
     font-weight: bold;
 }
 
+.b-and-w {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: solid #b61500 2px;
+}
+
+.b-and-w h2 {
+    color: black;
+    font-size: 2em;
+    margin: 8px 0px 8px 8px;
+}
+
+.b-and-w h3 {
+    color: black;
+    font-size: 1.5em;
+    margin-left:24px;
+}
+
+.b-and-w p {
+    margin-left:24px;
+}
+
 .footer {
-    color: darkcyan;
+    color: #dc6b29;
     text-align: center;
     height: 60px;
     font-size: larger;
@@ -249,17 +197,9 @@ p {
 /* google icons */
 
 .material-symbols-outlined {
-    font-size: 1em;
-    margin-bottom: -10px;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-  }
-
-.material-symbols-outlined:hover {
-    color:cyan;
-    cursor: pointer;
-    font-size: 1em;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
